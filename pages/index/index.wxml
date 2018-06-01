@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<block> 
+  <view style="background:{{back_color}};height:100rpx;width:100rpx">
+  
+  </view>
+   <!-- 下拉选项 -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+     <view class="picker">
+       当前选择：{{array[index]}}
+     </view>
+  </picker>
+   <!-- 味道  -->
+  <view>
+     <!-- 咸 salty -->
+     <view class='taste,taste_salty' bindtap='Click_details'>
+        咸 salty
+     </view>
+     <!-- 甜 sweet -->
+     <view class='taste,taste_sweet' bindtap='Click_details'>
+        甜 sweet
+     </view>
+     <!-- 酸 sour -->
+     <view class='taste,taste_sour' bindtap='Click_details'>
+        酸 sour
+     </view>
+     <!-- 辣 spicy -->
+     <view class='taste,taste_spicy' bindtap='Click_details'>
+        辣 spicy
+     </view>
+     <!-- 鲜 delicious-->
+     <view class='taste,taste_delicious' bindtap='Click_details'>
+        鲜 delicious
+     </view>
+     <!-- 苦 bitter-->
+     <view class='taste,taste_bitter' bindtap='Click_details'>
+        苦 bitter
+     </view>
+     <!-- 其他 else-->
+     <view class='taste,taste_else' bindtap='Click_details'>
+        其他 else
+     </view>
+     <!-- 不想吃了 in no mood-->
+     <view class='taste,taste_innomood' bindtap='Click_details'>
+        不想吃in no mood
+     </view>
+   </view>
+</block>  

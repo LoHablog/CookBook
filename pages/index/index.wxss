@@ -1,0 +1,46 @@
+/* 味道 */
+.taste{
+  float: left;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 300rpx;
+  height: 300rpx;  
+  width: 330rpx;  
+  border-width: 3rpx;  
+  border-style: solid;
+  border-color:#EAEAEA;     
+}
+/* 咸 */
+.taste_salty{
+  background-color:mistyrose;
+}
+/* 甜 */
+.taste_sweet{
+  background-color:aquamarine; 
+}
+/* 酸 */
+.taste_sour{
+  background-color:cornsilk; 
+}
+/* 辣 */
+.taste_spicy{
+  background-color:pink; 
+}
+/* 鲜 */
+.taste_delicious{
+  background-color:wheat;  
+}
+/* 苦 */
+.taste_bitter{
+  background-color:skyblue; 
+}
+/* 其他 */
+.taste_else{
+  background-color:navajowhite;   
+}
+/* 不想吃了 */
+.taste_innomood{
+  background-color:gainsboro; 
+}
+
+ 

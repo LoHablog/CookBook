@@ -1,0 +1,8 @@
+<block>  
+  <view class="card_wrap">  
+    <view animation="{{animationData}}" class="card_item">        
+      <image class='bg_image1' bindtouchend="clickthis" data-src='{{img_list[0]}}' src="{{img_list[0]}}"></image>  
+    </view>  
+  </view>  
+  <image class='bg_image2' src="{{img_list[1]}}"></image> 
+</block>  
