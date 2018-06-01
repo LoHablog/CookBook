@@ -30,5 +30,10 @@ Page({
     wx.navigateTo({
       url: '/pages/details/details',
     })
-  } 
+  },
+  Click_way:function(e){
+     wx.navigateTo({
+       url: '/pages/innomoodWay/innomoodWay',
+     })
+  }
 })  

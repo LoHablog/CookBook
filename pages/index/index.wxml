@@ -40,7 +40,7 @@
         其他 else
      </view>
      <!-- 不想吃了 in no mood-->
-     <view class='taste,taste_innomood' bindtap='Click_details'>
+     <view class='taste,taste_innomood' bindtap='Click_way'>
         不想吃in no mood
      </view>
    </view>

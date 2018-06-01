@@ -1,0 +1,19 @@
+<!-- 当用户选择不想吃饭的时候，我们给出的几种方法 -->
+<block>
+<text>不想吃饭的原因</text>
+  <view class="card_wrap">  
+    <view animation="{{animationData}}" class="card_item">        
+      <image class='bg_image1' bindtouchend="clickthis" data-src='{{img_list[0]}}' src="{{img_list[0]}}"></image>  
+    </view>  
+  </view>  
+  <image class='bg_image2' src="{{img_list[1]}}"></image> 
+
+  
+  <!-- <view>
+  Official Explanation：
+  1.疲劳紧张。由于疲劳或精神紧张，可能导致暂时性食欲不振，这是属于比较轻微的现象。
+  2.过食、过饮、运动量不足、慢性便秘，也都是引起食欲不振的因素。
+  3.精神因素：想要维持身材苗条，因此拒绝进食。
+  4.疾病因素：食欲不振通常会让人直接联想到胃肠问题，如慢性胃炎、胃迟缓、胃癌，都有可能出现这样的症状。</view>
+  <view></view> -->
+</block>

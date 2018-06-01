@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/innomoodWay/innomoodWay"
   ],
   "window":{
     "backgroundTextStyle":"light",
