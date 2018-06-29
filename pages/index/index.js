@@ -5,7 +5,7 @@ Page({
   data: {
     img_list: ['../images/ajlog.jpg'],
     picList:[
-      { id: 4, unique: 'unique_4', url:'../images/3.1.jpg',message:"无兄弟不篮球"  },
+      { id: 4, unique: 'unique_4', url:'../images/3.1.jpg',message:"登峰造极"  },
       { id: 3, unique: 'unique_3', url: '../images/3.png', message: "无兄弟不篮球" },
       { id: 2, unique: 'unique_2', url: '../images/4.png', message: "无兄弟不篮球"  },
       { id: 1, unique: 'unique_1', url: '../images/2.jpg', message: "无兄弟不篮球"  },
@@ -16,11 +16,6 @@ Page({
     }, {
       message: 'bar'
     }]
-  },
-  
-  //模板消息推送
-  FormSubmit:function(e){
-    console.log(e);
   },
   //点击选择不同的味道事件
   bindPickerChange: function (e) {

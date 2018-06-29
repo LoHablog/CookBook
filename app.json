@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/details/details",
-    "pages/innomoodWay/innomoodWay"
+    "pages/innomoodWay/innomoodWay",
+    "pages/manage/manage",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,11 +17,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "pages/images/ico-home.png",
+        "selectedIconPath": "pages/images/ico-home1.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "pages/images/ico-setting.png",
+        "selectedIconPath": "pages/images/ico-setting1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/images/ico-mine.png",
+        "selectedIconPath": "pages/images/ico-mine1.png"
       }
     ]
   },
