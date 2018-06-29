@@ -4,8 +4,20 @@ var app = getApp();
 Page({
   data: {
     array: ['春天', '夏天', '秋天', '冬天'],
-    multiIndex: [0, 0, 0],
-  }, 
+    img_list: ['../images/22.jpg'],
+    picList:[
+      { id: 5, unique: 'unique_5' },
+      { id: 4, unique: 'unique_4' },
+      { id: 3, unique: 'unique_3' }
+   ]
+
+  },
+  
+  //模板消息推送
+  FormSubmit:function(e){
+      let fromId=event.detail.fromId;
+      console.log('from发生了推送事件，推送码为：'+fromId);
+  },
   //点击选择不同的味道事件
   bindPickerChange: function (e) {
     this.setData({
