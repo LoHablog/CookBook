@@ -1,3 +1,4 @@
+<!-- 卡片切换的样式，在图片的处理和展示的方式上还没有做好准备，先搁置卡片切换的方法
 <block>  
   <view class="card_wrap">  
     <view animation="{{animationData}}" class="card_item">        
@@ -5,4 +6,15 @@
     </view>  
   </view>  
   <image class='bg_image2' src="{{img_list[1]}}"></image> 
-</block>  
+</block>   -->
+
+<view>
+   <!-- 显示图片 -->
+   <view class='.info'>
+      <image class='.info_img' src='../images/timg.jpg'></image>
+   </view>
+   <!-- 显示详情介绍 -->
+   <view class='.info_details'>
+      <view ><image class='.info_details_icon' src='../images/food.png'></image></view>
+   </view>
+</view>

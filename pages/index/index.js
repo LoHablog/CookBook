@@ -3,7 +3,7 @@
 var app = getApp();
 Page({
   data: {
-    img_list: ['../images/ajlog.jpg'],
+    img_list: ['../images/timg.jpg'],
     picList:[
       { id: 4, unique: 'unique_4', url:'../images/3.1.jpg',message:"登峰造极"  },
       { id: 3, unique: 'unique_3', url: '../images/3.png', message: "无兄弟不篮球" },
@@ -36,15 +36,15 @@ Page({
       }
     });
   },
-  //点击跳转到详情页面事件
-  Click_details:function(event){
-    wx.navigateTo({
-      url: '/pages/details/details',
-    })
-  },
   Click_way:function(e){
      wx.navigateTo({
        url: '/pages/innomoodWay/innomoodWay',
      })
+  },
+  //点击跳转到详情页面事件
+  clickSkip: function (e) {
+    wx.navigateTo({
+      url: '/pages/details/details'　// 详细内容页面
+    })
   }
 })  

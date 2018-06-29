@@ -2,17 +2,18 @@
 <block>
   <view style="background:{{back_color}};height:100rpx;width:100rpx">
      <!-- 咸 salty -->
-     <view class='taste'>
+     <view class='taste' bindtap="clickSkip">
         <view class='.info_top'>    
           <image data-src='{{img_list[0]}}' src="{{img_list[0]}}" class='.info_img'></image>        
-        </view>       
-        <view class='info_bottom'>你永远不要低估一颗冠军的心。</view>
+        </view>  
+        <!-- 字数限制不能超过23个字符-->
+        <view class='info_bottom'>如果此生注定是过客，那么，请让我将食物，打包带走。</view>
      </view>    
-      <view class='taste' wx:for="{{picList}}" wx:key="unique">
+     <view class='taste' wx:for="{{picList}}" wx:key="unique">
         <view class='.info_top'>    
           <image src="{{item.url}}" class='.info_img'>{{item.url}}</image>        
         </view>       
         <view class='info_bottom'>{{item.message}}</view>
      </view> 
-   </view>
+  </view>
 </block>
