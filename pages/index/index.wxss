@@ -21,16 +21,15 @@
 }
 .info_top{
   float: left;
-  margin:3rpx;
-  margin-top:5rpx;
-  width:99.5%;
+  margin-left: 13rpx;
+  margin-top:10rpx;
+  width:96%;
   height:350rpx;
-
 }
 .info_bottom{
   float: left;
   margin:3rpx;
-  margin-top:5rpx;
+  margin-top:4rpx;
   width:99%;
   height:65rpx;
 }

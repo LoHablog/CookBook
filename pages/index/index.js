@@ -3,20 +3,24 @@
 var app = getApp();
 Page({
   data: {
-    array: ['春天', '夏天', '秋天', '冬天'],
-    img_list: ['../images/22.jpg'],
+    img_list: ['../images/ajlog.jpg'],
     picList:[
-      { id: 5, unique: 'unique_5' },
-      { id: 4, unique: 'unique_4' },
-      { id: 3, unique: 'unique_3' }
-   ]
-
+      { id: 4, unique: 'unique_4', url:'../images/3.1.jpg',message:"无兄弟不篮球"  },
+      { id: 3, unique: 'unique_3', url: '../images/3.png', message: "无兄弟不篮球" },
+      { id: 2, unique: 'unique_2', url: '../images/4.png', message: "无兄弟不篮球"  },
+      { id: 1, unique: 'unique_1', url: '../images/2.jpg', message: "无兄弟不篮球"  },
+      { id: 0, unique: 'unique_0', url: '../images/7.png', message: "无兄弟不篮球" },
+    ],
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }]
   },
   
   //模板消息推送
   FormSubmit:function(e){
-      let fromId=event.detail.fromId;
-      console.log('from发生了推送事件，推送码为：'+fromId);
+    console.log(e);
   },
   //点击选择不同的味道事件
   bindPickerChange: function (e) {

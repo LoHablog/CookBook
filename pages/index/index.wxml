@@ -6,30 +6,13 @@
         <view class='.info_top'>    
           <image data-src='{{img_list[0]}}' src="{{img_list[0]}}" class='.info_img'></image>        
         </view>       
-        <view class='info_bottom'>登峰造极</view>
-     </view>
-     
-      <view class='taste' wx:for="picList" >
+        <view class='info_bottom'>你永远不要低估一颗冠军的心。</view>
+     </view>    
+      <view class='taste' wx:for="{{picList}}" wx:key="unique">
         <view class='.info_top'>    
-          <image data-src='{{img_list[0]}}' src="{{img_list[0]}}" class='.info_img'></image>        
+          <image src="{{item.url}}" class='.info_img'>{{item.url}}</image>        
         </view>       
-        <view class='info_bottom'>{{item.id}}</view>
+        <view class='info_bottom'>{{item.message}}</view>
      </view> 
-
-
-     <!-- 甜 sweet -->
-     <!-- <view class='taste' bindtap='Click_details'></view>  -->
-     <!-- 酸 sour -->
-     <!-- <view class='taste' bindtap='Click_details'></view> -->
-     <!-- 辣 spicy -->
-     <!-- <view class='taste,taste_spicy' bindtap='Click_details'></view> -->
-     <!-- 鲜 delicious-->
-     <!-- <view class='taste,taste_delicious' bindtap='Click_details'></view> -->
-     <!-- 苦 bitter-->
-     <!-- <view class='taste,taste_bitter' bindtap='Click_details'></view> -->
-     <!-- 其他 else-->
-     <!-- <view class='taste,taste_else' bindtap='Click_details'></view> -->
-     <!-- 不想吃了 in no mood-->
-     <!-- <view class='taste,taste_innomood' bindtap='Click_way'> </view> -->
    </view>
 </block>
