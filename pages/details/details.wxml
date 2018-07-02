@@ -8,13 +8,23 @@
   <image class='bg_image2' src="{{img_list[1]}}"></image> 
 </block>   -->
 
-<view>
+<view class='.all'>
    <!-- 显示图片 -->
    <view class='.info'>
       <image class='.info_img' src='../images/timg.jpg'></image>
    </view>
    <!-- 显示详情介绍 -->
    <view class='.info_details'>
-      <view ><image class='.info_details_icon' src='../images/food.png'></image></view>
+      <view >
+         <image class='.info_details_icon' src='../images/food.png'></image>
+         <text decode="{{true}}">&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp; 恬静的午后，坐在藤椅上，慵懒的阳光拥抱着自己。
+               那杯咖啡放在水晶般闪闪熠熠的桌面上，抬头仰望着蓝天，看着白云优雅地踱着步，惬意的午后。
+         </text>            
+         <view class="tool-item" catchtap='onCollectionTap' data-post-id="{{post.postId}}">
+           <image wx:if="{{collectionStatus}}" src="../images/collect_icon.png" class='.info_collect_icon'></image>
+           <image wx:else src="../images/collect_icon1.png" class='.info_collect_icon'></image>
+         </view>
+      </view>
    </view>
 </view>
